@@ -61,12 +61,7 @@ const App = () => {
             <Modal isOpen={isOpen} setIsOpen={setIsOpen} />
             {!newsArticles.length ? (
                 <div className={classes.footer}>
-                    <Typography variant="body1" component="h2">
-                        Created by
-                        <a className={classes.link} href="https://www.linkedin.com/in/adrian-hajdin/"> Adrian Hajdin</a> -
-                        <a className={classes.link} href="http://youtube.com/javascriptmastery"> JavaScript Mastery</a>
-                    </Typography>
-                    <img className={classes.image} src={logo} height="50px" alt="JSMastery logo" />
+
                 </div>
             ) : null}
         </div>
