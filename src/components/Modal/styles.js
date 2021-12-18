@@ -1,13 +1,15 @@
 // import { makeStyles } from '@material-ui/core/styles';
 
-import { makeStyles } from "@mui/material";
+import { makeStyles } from "@mui/styles";
+
+
 
 export default makeStyles((theme) => ({
     paper: {
         position: 'absolute',
-        backgroundColor: theme.palette.background.paper,
-        boxShadow: theme.shadows[5],
-        padding: theme.spacing(5),
+        // backgroundColor: theme.palette.background.paper,
+        // boxShadow: theme.shadows[5],
+        // padding: theme.spacing(5),
         top: '50%',
         left: '50%',
         transform: 'translate(-50%, -50%)',

@@ -3,15 +3,27 @@ import React, { useState, useEffect } from 'react';
 // import wordsToNumbers from 'words-to-numbers';
 // import alanBtn from '@alan-ai/alan-sdk-web';
 
-import logo from './images/logo.png';
+// import logo from './images/logo.png';
 import { NewsCards, Modal } from './components';
 import useStyles from './styles';
 //
 import alanBtn from '@alan-ai/alan-sdk-web';
 import wordsToNumbers from 'words-to-numbers';
-import { Typography } from '@mui/material';
+import { TableFooter, Typography } from '@mui/material';
+// const alanKey = '8349e013b0f326ec212a3310aeae94c62e956eca572e1d8b807a3e2338fdd0dc/stage';
 
 const App = () => {
+
+    // useEffect(() => {
+    //     alanBtn({
+    //         key: alanKey,
+    //         onCommand: ({ command }) => {
+    //             if (command === 'testCommand') {
+    //                 alert('the codeis executed');
+    //             }
+    //         }
+    //     })
+    // })
     const [activeArticle, setActiveArticle] = useState(0);
     const [newsArticles, setNewsArticles] = useState([]);
     const [isOpen, setIsOpen] = useState(false);
@@ -61,7 +73,7 @@ const App = () => {
             <Modal isOpen={isOpen} setIsOpen={setIsOpen} />
             {!newsArticles.length ? (
                 <div className={classes.footer}>
-
+                    <TableFooter>AI Time</TableFooter>
                 </div>
             ) : null}
         </div>
